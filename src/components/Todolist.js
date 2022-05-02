@@ -17,7 +17,7 @@ export default function Todolist() {
      }
     )
     .then(response => response.json())
-    .then(data => console.log(data))
+    .then(winds => console.log(winds))
   }
 
 
