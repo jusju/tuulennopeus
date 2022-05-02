@@ -8,7 +8,7 @@ export default function Todolist() {
 
   const fetchWinds = () => {
     console.log("We are in fetch winds!!")
-    fetch("windspeeds.json"
+    fetch('./windspeeds.json'
      , {
       headers : { 
         'Content-Type': 'application/json',
@@ -34,7 +34,7 @@ export default function Todolist() {
 useEffect(() => {
   fetchWinds();
 
-});
+},[]);
 
 
   return(
