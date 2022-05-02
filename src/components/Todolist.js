@@ -1,6 +1,9 @@
 import React, {useEffect, useState } from 'react';
 import { CartesianGrid, LineChart, Line, YAxis, XAxis } from 'recharts';
 import { format, parseISO } from "date-fns";
+import { assertValidExecutionArguments } from 'graphql/execution/execute';
+import axios from 'axios';
+import winds from "./winds.json";
 
 
 export default function Todolist() {
@@ -8,6 +11,13 @@ export default function Todolist() {
 
   const fetchWinds = () => {
     console.log("We are in fetch winds!!")
+
+    console.log(winds);
+    console.log(winds["0205-1615"]);
+
+  }
+
+/*
     fetch('./windspeeds.json'
      , {
       headers : { 
@@ -20,7 +30,7 @@ export default function Todolist() {
     .then(winds => console.log(winds))
   }
 
-
+*/
   const data = [{name: 'Page A', uv: 1, aika: "10:00 02-02", amt: 2400}, 
   {name: 'Page B', uv: 2.2, aika: "10:05 02-02", amt: 2400},
   {name: 'Page C', uv: 1.9, aika: "10:10 02-02", amt: 2400},
