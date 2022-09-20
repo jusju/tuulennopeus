@@ -6,7 +6,7 @@ import axios from 'axios';
 import data from "./winds.json";
 
 
-export default function Todolist() {
+export default function WindTracker() {
   const [speeds, setSpeeds] = useState([]);
 
   const fetchWinds = () => {
