@@ -1,10 +1,10 @@
 import './App.css';
-import Todolist from './components/Todolist';
+import WindTracker from './components/WindTracker';
 
 function App() {
   return (
     <div className="App">
-      <Todolist />
+      <WindTracker />
     </div>
   );
 }
